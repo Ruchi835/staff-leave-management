@@ -9,6 +9,7 @@ import LeaveType from './Components/LeaveType';
 import Addstaff from './Components/Addstaff';
 import Leave from './Components/Leave';
 import Hodhome from './Components/Hodhome';
+import EditStaff from './Components/EditStaff';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path="/addstaff" element={<Addstaff />} />
         <Route path="/leave" element={<Leave />} />
         <Route path="/Hodhome" element={<Hodhome />} />
-
+        <Route path="/editstaff/:staffId" element={<EditStaff />} />
       </Routes>
     </Router>
   );
