@@ -12,6 +12,8 @@ import Hodhome from './Components/Hodhome';
 import EditStaff from './Components/EditStaff';
 import AlternateArrangement from './Components/AlternateArrangement';
 import ManageLeave from './Components/ManageLeave';
+import Hodstaff from './Components/Hodstaff';
+import Hodedit from './Components/Hodedit';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="/editstaff/:staffId" element={<EditStaff />} />
         <Route path="/alternate-arrangement" element={<AlternateArrangement />} />
         <Route path="/manageleave" element={<ManageLeave />} />
+        <Route path="/Hodstaff" element={<Hodstaff/>} />
+        <Route path="/Hodedit/:staffId" element={<Hodedit />} />
       </Routes>
     </Router>
   );

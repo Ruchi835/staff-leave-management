@@ -1,6 +1,6 @@
 // HodNavbar.jsx
 import React from 'react';
-import { Container, Nav, Navbar as BootstrapNavbar } from 'react-bootstrap';
+import { Container, Nav, Navbar as BootstrapNavbar, NavDropdown } from 'react-bootstrap';
 import LogoImage from './logo.jpeg';
 import './Navbar.css';
 import { useNavigate } from 'react-router-dom';
@@ -9,11 +9,15 @@ const HodNavbar = () => {
   const navigate = useNavigate();
 
   const handleHomeClick = () => {
-    navigate('/hodhome'); // Update the route to hodhome
+    navigate('/hodhome');
   };
 
-  const handleManageLeaveClick = () => {
-    navigate('/manageleave');
+  const handleStaffClick = () => {
+    navigate('/Hodstaff');
+  };
+
+  const handleLeaveClick = (status) => {
+    navigate(`/manageleave/${status}`);
   };
 
   return (
@@ -30,7 +34,12 @@ const HodNavbar = () => {
           {'LeaveEase'}
         </BootstrapNavbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link onClick={handleManageLeaveClick}>Manage Leave</Nav.Link>
+          <Nav.Link onClick={handleStaffClick}>Staff</Nav.Link>
+          <NavDropdown title="Manage Leave" id="basic-nav-dropdown">
+            <NavDropdown.Item onClick={() => handleLeaveClick('approved')}>Approved Leaves</NavDropdown.Item>
+            <NavDropdown.Item onClick={() => handleLeaveClick('declined')}>Declined Leaves</NavDropdown.Item>
+            <NavDropdown.Item onClick={() => handleLeaveClick('pending')}>Pending Leaves</NavDropdown.Item>
+          </NavDropdown>
         </Nav>
       </Container>
     </BootstrapNavbar>
