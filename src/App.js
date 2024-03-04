@@ -10,6 +10,8 @@ import Addstaff from './Components/Addstaff';
 import Leave from './Components/Leave';
 import Hodhome from './Components/Hodhome';
 import EditStaff from './Components/EditStaff';
+import AlternateArrangement from './Components/AlternateArrangement';
+import ManageLeave from './Components/ManageLeave';
 
 function App() {
   return (
@@ -23,10 +25,11 @@ function App() {
         <Route path="/leave" element={<Leave />} />
         <Route path="/Hodhome" element={<Hodhome />} />
         <Route path="/editstaff/:staffId" element={<EditStaff />} />
+        <Route path="/alternate-arrangement" element={<AlternateArrangement />} />
+        <Route path="/manageleave" element={<ManageLeave />} />
       </Routes>
     </Router>
   );
 }
 
 export default App;
- 

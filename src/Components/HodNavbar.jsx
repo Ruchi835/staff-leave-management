@@ -1,27 +1,19 @@
-// Navbar.jsx
+// HodNavbar.jsx
 import React from 'react';
 import { Container, Nav, Navbar as BootstrapNavbar } from 'react-bootstrap';
 import LogoImage from './logo.jpeg';
 import './Navbar.css';
 import { useNavigate } from 'react-router-dom';
 
-
 const HodNavbar = () => {
   const navigate = useNavigate();
 
   const handleHomeClick = () => {
-    navigate('/home'); // Navigate to the /home route
+    navigate('/hodhome'); // Update the route to hodhome
   };
 
-  const handleStaffClick = () => {
-    navigate('/staff');
-  };
-
-  const handleLeaveTypeClick = () => {
-    navigate('/leavetype');
-  };
-  const handleLeaveClick = () => {
-    navigate('/leave'); // Navigate to the /leave route
+  const handleManageLeaveClick = () => {
+    navigate('/manageleave');
   };
 
   return (
@@ -38,10 +30,7 @@ const HodNavbar = () => {
           {'LeaveEase'}
         </BootstrapNavbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link onClick={handleStaffClick}>Staff</Nav.Link>
-          <Nav.Link onClick={handleLeaveTypeClick}>Leave Type</Nav.Link>
-          <Nav.Link onClick={handleLeaveClick}>Leave</Nav.Link>
-          
+          <Nav.Link onClick={handleManageLeaveClick}>Manage Leave</Nav.Link>
         </Nav>
       </Container>
     </BootstrapNavbar>
