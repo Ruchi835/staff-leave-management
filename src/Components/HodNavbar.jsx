@@ -17,6 +17,7 @@ const HodNavbar = () => {
   };
 
   const handleLeaveClick = (status) => {
+<<<<<<< HEAD
     if (status === 'approved') {
       navigate('/approvedleave');
     } else if (status === 'declined') {
@@ -32,6 +33,9 @@ const HodNavbar = () => {
     // Perform logout actions (e.g., clearing session, etc.)
     // Then, navigate to the login page
     navigate('/');
+=======
+    navigate(`/manageleave/${status}`);
+>>>>>>> 89b83e746de8d3e527045fe1fcb3c35df4164c60
   };
 
   return (
@@ -54,11 +58,14 @@ const HodNavbar = () => {
             <NavDropdown.Item onClick={() => handleLeaveClick('declined')}>Declined Leaves</NavDropdown.Item>
             <NavDropdown.Item onClick={() => handleLeaveClick('pending')}>Pending Leaves</NavDropdown.Item>
           </NavDropdown>
+<<<<<<< HEAD
         </Nav>
         <Nav>
           <NavDropdown title="HOD" id="basic-nav-dropdown">
             <NavDropdown.Item onClick={handleLogoutClick}>Logout</NavDropdown.Item>
           </NavDropdown>
+=======
+>>>>>>> 89b83e746de8d3e527045fe1fcb3c35df4164c60
         </Nav>
       </Container>
     </BootstrapNavbar>

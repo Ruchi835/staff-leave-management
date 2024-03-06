@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+// HodHome.jsx
+>>>>>>> 89b83e746de8d3e527045fe1fcb3c35df4164c60
 import React from 'react';
 import Navbar from './HodNavbar'; // Update the import to your actual HodNavbar component
 import './Home.css';
@@ -19,4 +23,8 @@ const HodHome = () => {
   );
 }
 
+<<<<<<< HEAD
 export default HodHome;
+=======
+export default HodHome;
+>>>>>>> 89b83e746de8d3e527045fe1fcb3c35df4164c60

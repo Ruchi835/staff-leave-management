@@ -14,9 +14,12 @@ import AlternateArrangement from './Components/AlternateArrangement';
 import ManageLeave from './Components/ManageLeave';
 import Hodstaff from './Components/Hodstaff';
 import Hodedit from './Components/Hodedit';
+<<<<<<< HEAD
 import PendingLeave from './Components/PendingLeave';
 import ApprovedLeave from './Components/ApprovedLeave';
 import DeclinedLeave from './Components/DeclinedLeave';
+=======
+>>>>>>> 89b83e746de8d3e527045fe1fcb3c35df4164c60
 
 function App() {
   return (
@@ -34,9 +37,12 @@ function App() {
         <Route path="/manageleave" element={<ManageLeave />} />
         <Route path="/Hodstaff" element={<Hodstaff/>} />
         <Route path="/Hodedit/:staffId" element={<Hodedit />} />
+<<<<<<< HEAD
         <Route path="/pendingleave" element={<PendingLeave />} />
         <Route path="/approvedleave" element={<ApprovedLeave />} />
         <Route path="/declinedleave" element={<DeclinedLeave />} />
+=======
+>>>>>>> 89b83e746de8d3e527045fe1fcb3c35df4164c60
       </Routes>
     </Router>
   );

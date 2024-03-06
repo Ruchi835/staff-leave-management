@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+// StaffPage.jsx
+>>>>>>> 89b83e746de8d3e527045fe1fcb3c35df4164c60
 import React, { useState, useEffect } from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -39,7 +43,11 @@ export default function StaffPage() {
   const handleDeleteStaff = (staffId) => {
     const apiUrl = `http://localhost:3001/deleteStaff/${staffId}`;
 
+<<<<<<< HEAD
     fetch(apiUrl,{
+=======
+    fetch(apiUrl, {
+>>>>>>> 89b83e746de8d3e527045fe1fcb3c35df4164c60
       method: 'DELETE',
     })
       .then((response) => response.json())
@@ -108,4 +116,8 @@ export default function StaffPage() {
       </div>
     </div>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 89b83e746de8d3e527045fe1fcb3c35df4164c60
