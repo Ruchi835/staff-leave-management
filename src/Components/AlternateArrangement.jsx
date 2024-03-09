@@ -165,8 +165,6 @@ const AlternateArrangement = () => {
   );
 };
 
-<<<<<<< HEAD
+
 export default AlternateArrangement;
-=======
-export default AlternateArrangement;
->>>>>>> 89b83e746de8d3e527045fe1fcb3c35df4164c60
+
